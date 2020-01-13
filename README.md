@@ -1,5 +1,5 @@
 # plutr
-a shell script language
+Targeting to a OS shell script language, or other possibilities.
 
 ## Slogen
 - **p**owerful
@@ -8,6 +8,23 @@ a shell script language
 - **t**ypable
 - **r**ememberable
 
+## Icon
+
+   a
+  --- ?= null
+   0
+
 ## Features
 - universal (cross platform)
 - plugable
+
+## Author's Learning Plan
+- Compiler (LLVM, lexer, parser, ...)
+- bison + flex + LLVM
+- Relatioal database
+- EcmaScript 6 + lua + python
+- C/C++ (efficiency)
+- The Little Schemer
+
+## References
+bash, tsh, ..., and cmd, powershell
