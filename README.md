@@ -9,10 +9,11 @@ The **plutr** is a language targeting to an OS shell, or other possibilities.
 - **r**ememberable
 
 ## Icon
-
+```
    a
   --- ?= null
    0
+```
 
 ## Features
 - universal (cross platform)
