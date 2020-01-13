@@ -1,5 +1,5 @@
 # plutr
-Targeting to a OS shell script language, or other possibilities.
+The **pluter** is a language targeting to an OS shell, or other possibilities.
 
 ## Slogen
 - **p**owerful
@@ -28,3 +28,7 @@ Targeting to a OS shell script language, or other possibilities.
 
 ## References
 bash, tsh, ..., and cmd, powershell
+
+## Contribution
+Please edit this file and make a pull request.
+
