@@ -1,5 +1,5 @@
 # plutr
-The **pluter** is a language targeting to an OS shell, or other possibilities.
+The **plutr** is a language targeting to an OS shell, or other possibilities.
 
 ## Slogen
 - **p**owerful
