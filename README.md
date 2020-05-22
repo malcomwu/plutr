@@ -22,10 +22,11 @@ The **plutr** is a language targeting to an OS shell, or other possibilities.
 ## Author's Learning Plan
 - Compiler (LLVM, lexer, parser, ...)
 - bison + flex + LLVM
-- Relatioal database
+- Relational database
 - EcmaScript 6 + lua + python
 - C/C++ (efficiency)
 - The Little Schemer
+- SICP
 
 ## References
 bash, tsh, ..., and cmd, powershell
