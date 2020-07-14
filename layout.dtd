@@ -1,0 +1,18 @@
+<!-- Layout of plutr v0.1.0 -->
+
+<!-- Entities -->
+
+
+<!-- Structures -->
+
+<!ELEMENT plutr (console, shell, dummy1, dummy2)>
+<!ATTLIST plutr
+    carrige CDATA #IMPLIED
+    payload CDATA #IMPLIED
+    dataflow CDATA #IMPLIED
+>
+
+<!ELEMENT console to-be-defined>
+<!ELEMENT shell to-be-defined>
+<!ELEMENT dummy1 to-be-defined>
+<!ELEMENT dummy2 to-be-defined>

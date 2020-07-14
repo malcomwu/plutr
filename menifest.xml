@@ -1,0 +1,15 @@
+<?xml version="1.1" encoding="UTF-8" standalone="yes"?>
+<Doctye plutr PUBLIC SYSTEM
+    "-//Muzenplaats//DTD Carriage 0.1 Layout//EN"
+    "https://github.com/malcomwu/plutr/layout.dtd">
+
+<plutr
+  carriage="return_0"
+  payload="throughput_0"
+  dataflow="dummy_0"
+>
+  <console/>
+  <shell1/>
+  <dummy1/>
+  <dummy2/>
+</plutr>

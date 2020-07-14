@@ -20,7 +20,7 @@ The **plutr** is a language targeting to an OS shell, or other possibilities.
 - plugable
 
 ## Development
-- (tmp) Current version 0.0.0.1 (codename: carriage)
+- (tmp) Current version 0.1.0 (codename: carriage)
 - The layout is two-by-two (2 x 2) as follows,
   ```
   +----+----+
@@ -41,8 +41,9 @@ The **plutr** is a language targeting to an OS shell, or other possibilities.
 - SICP
 
 ## References
-bash, tsh, ..., and cmd, powershell
+bash, tsh, ..., and cmd with powershell.
 
 ## Contribution
-Please edit this file and make a pull request.
+1. please make an issue in track, to be checked out in a thread.
+2. Please fork this repository and make a pull request.
 

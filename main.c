@@ -1,7 +1,12 @@
 /* plutr (codename: carrige) */
 
 #include <stdio.h>
-#include "main.h"
+#include <string.h>
+
+#include "console.h"
+#include "shell.h"
+#include "dummy1.h"
+#include "dummy2.h"
 
 int main() {
   // <layout>
