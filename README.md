@@ -19,6 +19,13 @@ The **plutr** is a language targeting to an OS shell, or other possibilities.
 - universal (cross platform)
 - plugable
 
+## Plan for milestones
+1. One year, to release v1.0
+2. After v1.0 publication, start the v2.0-delta together with the maintainence of v1.0.
+3. Release v2.0.n-beta in the, three, year.
+
+(In consideration)
+
 ## Development
 - (tmp) Current version 0.1.0 (codename: carriage)
 - The layout is two-by-two (2 x 2) as follows,
