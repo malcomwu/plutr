@@ -1,6 +1,9 @@
 # plutr
 The **plutr** is a language targeting to an OS shell, or other possibilities.
 
+## Preface
+https://github.com/malcomwu/plutr/blob/master/preface.md
+
 ## Slogen
 - **p**owerful
 - **l**earnable
