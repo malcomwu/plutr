@@ -48,8 +48,30 @@ dos console> order? filename /parameter
 To be investigated..
 
 
+## Command list
 
+1. personal
+- who
+- finger user_name
+- hi there_name   // respond: (my_name) hi there_name (touch of the contact)
+- contact user_name messages  // one line
+- share user_name topic   // enter a conversion mode by share() ^D
+- block user_name_w_wildcard_w_regexp     //  ~/blocked_users.list . ... ... .rw
+- unblock user_name_w_wildcard_w_regexp
 
+- how?
+- where?   // ~~ pwd //
+
+(my friend)
+
+2. computerist
+- which command_name
+- pwd
+- ls folder_name
+- cd folder_name
+- touch file_name
+
+(so long)
 
 
 

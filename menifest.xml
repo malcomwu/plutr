@@ -3,10 +3,10 @@
     "-//Muzenplaats//DTD Carriage 0.1 Layout//EN"
     "https://github.com/malcomwu/plutr/layout.dtd">
 
-<plutr
-  carriage="return_0"
-  payload="throughput_0"
-  dataflow="dummy_0"
+<plutr version="0.1.1"/>
+  carriage="return_0.2"
+  payload="throughput_0.2"
+  dataflow="dummy_0.2"
 >
   <console/>
   <shell1/>
