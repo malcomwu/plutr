@@ -55,8 +55,10 @@ To be investigated..
 - finger user_name
 - hi there_name   // respond: (my_name) hi there_name (touch of the contact)
 - contact user_name messages  // one line
-- share user_name topic   // enter a conversion mode by share() ^D
-- block user_name_w_wildcard_w_regexp     //  ~/blocked_users.list . ... ... .rw
+- share user_name topic   // enter a conversion session by share()
+- block user_name_w_wildcard_w_regexp     // ~/blocked_users.list . ... ... .rw
+                                          // ~/share_sessions
+                                          // ~/share_sessions/John_001.log
 - unblock user_name_w_wildcard_w_regexp
 
 - how?
@@ -74,5 +76,12 @@ To be investigated..
 (so long)
 
 
-
-
+### Specification of share session
+```
+Enter in a share session.
+John> Hi Marry~
+Marry> Hi John!
+Marry> What's up!?
+John> Okay, bye~
+Marry> (^D) logout
+```
