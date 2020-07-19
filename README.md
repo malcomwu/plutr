@@ -40,6 +40,28 @@ https://github.com/malcomwu/plutr/blob/master/preface.md
   +----+----+ ,
   ```
   in which 1> refers to a console while 2$ a shell. The 3? and 4? are not defined yet.
+- Toolchains: FreeDOS in DOS& and FreeBSD in tcsh within QEMU
+- No network support in DOS for v1.0 while it is with tcsh.
+
+&DOS stands for disk operation system.   // others are Brand&&CPU OS
+                                         // Notolskrju example WinTel (kidding)
+ the history is as follows: IBM-PC by PC-DOS; IBM found out Gates in garazu;
+ IBM appricated Gates and also believe that he would not take over it.
+ Gates, thus said, I am famous, untill now and still till-ing.
+ IBM, therefore lost the PC domain who it led. By Willans and Taiwan mostly.
+ Because we copy-cat your public specs of both hard-&firmwars, without
+ touching your patterns. If touched, we hided it fairly well.% You agred. The
+ reasons, we try try see it, and try try see you. You're dull; no reaction.
+ (People's choice, (joke))
+
+&%The techonology is so-called by-passing surgery, in which the public spec(s)
+  are implanted with and within. It's hard-firm wares, you could not do the
+  deasembler. You could do reverse engineering to check us out. You did not
+  have time. I'm sorry to the Taiwaneses, thus, leaked. For the special-301
+  act; however, we did very hard to follow you. The main reason is because
+  we did not have money in a $ manner. However, if we had it, we still
+  pirate you because we have learned the habbit for decades. I'm almost
+  been released from you, by a Xrejected [Acept] Stemp-ed, with my proud!
 
 ## Author's Learning Plan
 - Compiler (LLVM, lexer, parser, ...)
