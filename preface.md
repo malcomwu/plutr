@@ -60,6 +60,9 @@ To be investigated..
                                           // ~/share_sessions
                                           // ~/share_sessions/John_001.log
 - unblock user_name_w_wildcard_w_regexp
+- login user_name
+- logout
+- exit (for console in v1.0 w/o net)
 
 - how?
 - where?   // ~~ pwd //
