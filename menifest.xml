@@ -4,12 +4,12 @@
     "https://github.com/malcomwu/plutr/layout.dtd">
 
 <plutr version="0.1.1"/>
-  carriage="return_0.2"
-  payload="throughput_0.2"
-  dataflow="dummy_0.2"
+  carriage="return_0.2.1"
+  payload="throughput_0.2.1"
+  dataflow="dummy_0.2.1"
 >
-  <console/>
-  <shell1/>
-  <dummy1/>
-  <dummy2/>
+  <console prompt="1&gt; "/>
+  <shell1 prompt="2$ "/>
+  <dummy1 prompt="3? "/>
+  <dummy2 prompt="4? "/>
 </plutr>
