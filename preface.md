@@ -52,6 +52,7 @@ To be investigated..
 
 1. Personal
 1.1 Regular
+```
 - who
 - finger user_name
 - hi there_name   // respond: (my_name) hi there_name (touch of the contact)
@@ -67,22 +68,24 @@ To be investigated..
 
 - how?
 - where?   // ~~ pwd //
-
-# For me and my friends in warm and in cold, avoid a cold fish.
+```
+/* For me and my friends in warm and in cold, avoid a cold fish. */
 
 1.2 Functional
+```
 - calc statement   // Enter a calculation session if statement := ''.
-
-# For my tasks.
+```
+/* For my tasks. */
 
 2. Compute routine
+```
 - which command_name
 - pwd
 - ls folder_name
 - cd folder_name
 - touch file_name
-
-# So long..
+```
+/* So long.. */
 
 
 ### Session description
