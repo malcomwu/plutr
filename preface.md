@@ -48,6 +48,7 @@ To be investigated..
 ## Command list
 
 1. Personal
+
 1.1 Regular
 
 The regular commands used for oneself and one's friends
