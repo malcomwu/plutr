@@ -101,7 +101,7 @@ Marry> (^D) logout
 2. Calculation session
 2.1. Gramma
 ```session
-Calc-Stmt ::= assign | expr
+statement := assign | expr
 assign := expr
 expr := the-js-features-for-number-without-Math-namespace
 ```
