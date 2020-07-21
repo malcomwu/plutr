@@ -18,9 +18,6 @@ only has the text-mode. Therefore, the applications for the console are also
 always in the text-mode. The flow in-between goes, such as a pipe or redirect.
 To compare with a morden shell; however, it remains the same for most application.
 
-My idea becomes very clear now; a console looks for >_< while shell look for $_$.
-
-Hence, I'm mad.
 
 ## Checkup test for the distinction of a console or a shell
 ```
@@ -52,6 +49,8 @@ To be investigated..
 
 1. Personal
 1.1 Regular
+
+The regular commands used for oneself and one's friends
 ```
 - who
 - finger user_name
@@ -69,15 +68,13 @@ To be investigated..
 - how?
 - where?   // ~~ pwd //
 ```
-/* For me and my friends in warm and in cold, avoid a cold fish. */
 
-1.2 Functional
+1.2 Featured commands for general tasks
 ```
 - calc statement   // Enter a calculation session if statement := ''.
 ```
-/* For my tasks. */
 
-2. Compute routine
+1.3. Routine comands
 ```
 - which command_name
 - pwd
@@ -85,7 +82,7 @@ To be investigated..
 - cd folder_name
 - touch file_name
 ```
-/* So long.. */
+To be continued..
 
 
 ### Session description
@@ -107,8 +104,10 @@ Calc-Stmt ::= assign | expr
 assign := expr
 expr := the-js-features-for-number-without-Math-namespace
 ```
+
 2.2 Feature add-on
-**A function for the resolution of floating point and decimal number**
+
+2.2.1 A function for the resolution of floating point and decimal number
 ```es
 const defaultEpsilon = 0.000001
 export const near = (a, b, epsilon) => Math.abs(a - b) <= epsilon
@@ -122,6 +121,7 @@ near(a, b, 0.0001) === true
 2.3 Usage
 Note that the usage in the command line is as below. The usage in the
 session is about the same.
+
 ```shell
 $ calc 1 + 2
 ans = 3
