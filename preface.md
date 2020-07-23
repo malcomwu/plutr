@@ -51,12 +51,52 @@ To be investigated..
 
 1.1 Regular
 
-The regular commands used for oneself and one's friends
+**Working Draft**
+
+The following commands are only for SysOp only,
 ```
+- add user                    //                                    (SysOp)
+- add group default_group     // /root/path/to/default_groups.list - -rw --- ---
+- add group group_name        // /root/path/to/groups.list
+- grant group_name leader_name
+```
+
+The others for the group leaders who are granted,
+```
+  add greeting greeting_name  // ~/greetings.list      - -rw -rw ---
+  add regard reard_name       // ~/regards.list        - -rw -rw ---
+-                                                       (Group leader)
+```
+
+The only default group is with your supervisor or may be two, in which
+the mangers are optional; only your major manger in the up-stream should be
+there. The second default for you is those who is supervised by you. You can
+do `who` and `finger`; say default `hi`, `hello` `hoi` and others defined by
+someone who has the privilage to do it. Another command is  `contact` to
+message all members in the group.
+
+However, we only share to the friends in the
+`share marklee Do you have time?` command. Who is my friends? We can add one
+by one such as `add friend marklee`. The friends can also be edited in
+`~/friends.list` to either add many at once or comment someone out in a line
+of `# marklee`. To delete it is anoter option, but it can be added in again.
+The comment is your helper or you want to remove it.
+
+The *regular commands* used for oneself and one's friends
+```
+Group commands:
 - who
 - finger user_name
-- hi there_name   // respond: (my_name) hi there_name (touch of the contact)
+
+- hi there_name    // respond: (my_name) hi there_name (touch of the contact)
+- hello there_name
+- hoi there_name
+- defined-greeting there_name
+
 - contact user_name messages  // one line
+
+Friend commands:
+- add friend user_name                  // ~/friends.list - --- --- -rw
 - share user_name topic   // enter a conversion session by share()
 - block user_name_w_wildcard_w_regexp   // ~/blocked_users.list - --- --- -rw
                                         // ~/share_sessions
@@ -95,7 +135,8 @@ John> Hi Marry~
 Marry> Hi John!
 Marry> What's up!?
 John> Okay, bye~
-Marry> (^D) logout
+Marry> bye
+session logout.
 ```
 
 2. Calculation session
