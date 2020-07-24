@@ -1,6 +1,35 @@
-# Preface
+                                 Prelude
 
-## Why plutr
+                              Table of Conent
+
+  I. Why plutr
+
+  II. Methodology
+
+  III. Data flow
+    III-1. Pipe
+    III-2. Redirect
+    III-3. Other features for v1.0^
+
+  IV. Command list (Working draft)
+    IV-1. Console commands
+    IV-2. Shell commands
+    IV-3. Common commands
+    IV-4. Routine commands
+
+  V. Session description
+    V-1. Share session
+      V-1.1. Gramma
+      V-1.2. Usage
+    V-2. Calculator (calc) session
+      V-2.1. Gramma
+      V-2.2. Feature add-on
+      V-2.3. Usage
+
+                                         i
+
+
+I. Why plutr
 
 First, we would like to find out the difference between console and shell.
 A DOS console does with batches, but does within, or out, called a command?
@@ -19,7 +48,9 @@ always in the text-mode. The flow in-between goes, such as a pipe or redirect.
 To compare with a morden shell; however, it remains the same for most application.
 
 
-## Checkup test for the distinction of a console or a shell
+II. Methodology
+
+Checkup test for the distinction of a console or a shell
 ```
 shell$ command -o -p --option filename (clear)
 shell$ command subcommand ($ git init)
@@ -29,44 +60,70 @@ dos console> instruction? filename /parameter
 dos console> order? filename /parameter
 ```
 
-## Data flow
+III. Data flow
 
-1. pipe
+III-1. Pipe
+
+A pipe is a one way distribution.
+```sh
+1> a | b
+2$ a | b
 ```
-  > a | b
-  $ a | b
+III-2. Redirect
+
+A redirection is a one way dispatch.
+The features are only partially supported in 1> console.
+```sh
+2$ a > b; a 1> b; a 2> b; (forward redirection)
+2$ a < b; a <1 b; a <2 b; (reverse redirection)
+2$ a <> b                 (assertion test => yes|no)
+2$ a <-> d                (diff a b; a feature for vedors to follow)
 ```
-2. redirect
+
+III-3. Other features for v1.0^
+
+The defination as below is unclear; for a memo purpose.
+```sh
+3? a <= b
+3? a => b
+3? a <=> b
 ```
-  > (not supported??)
-  $ a > b; a 1> b; a 2> b; (correctness check needed..)
+
+
+IV. Command list (Working draft)
+
+IV-1. Console commands
+
+```sh
+dir directory_name
 ```
-3. are there others?
-To be investigated..
 
+IV-2. Shell commands
 
-## Command list
+1 Personal
 
-1. Personal
+1.1. Regular
 
-1.1 Regular
-
-**Working Draft**
+1.1.1. Privilage commands
 
 The following commands are only for SysOp only,
-```
-- add user                    //                                    (SysOp)
-- add group default_group     // /root/path/to/default_groups.list - -rw --- ---
-- add group group_name        // /root/path/to/groups.list
+
+```sh
+- add user                    #                                    (SysOp)
+- add group default_group     # /root/path/to/default_groups.list - -rw --- ---
+- add group group_name        # /root/path/to/groups.list
 - grant group_name leader_name
 ```
 
 The others for the group leaders who are granted,
-```
-  add greeting greeting_name  // ~/greetings.list      - -rw -rw ---
-  add regard reard_name       // ~/regards.list        - -rw -rw ---
+
+```sh
+  add greeting greeting_name  # ~/greetings.list      - -rw -rw ---
+  add regard reard_name       # ~/regards.list        - -rw -rw ---
 -                                                       (Group leader)
 ```
+
+1.1.2. Descirption of commands between privilage and normal users
 
 The only default group is with your supervisor or may be two, in which
 the mangers are optional; only your major manger in the up-stream should be
@@ -82,9 +139,11 @@ by one such as `add friend marklee`. The friends can also be edited in
 of `# marklee`. To delete it is anoter option, but it can be added in again.
 The comment is your helper or you want to remove it.
 
-The *regular commands* used for oneself and one's friends
-```
-Group commands:
+
+1.1.3. Regular commands for the users and their friends
+
+**Group**
+```sh
 - who
 - finger user_name
 
@@ -94,13 +153,15 @@ Group commands:
 - defined-greeting there_name
 
 - contact user_name messages  // one line
+```
 
-Friend commands:
-- add friend user_name                  // ~/friends.list - --- --- -rw
-- share user_name topic   // enter a conversion session by share()
-- block user_name_w_wildcard_w_regexp   // ~/blocked_users.list - --- --- -rw
-                                        // ~/share_sessions
-                                        // ~/share_sessions/John_001.log
+**Friend**
+```sh
+- add friend user_name                 # ~/friends.list - --- --- -rw
+- share user_name topic                # enter a conversion session by share()
+- block user_name_w_wildcard_w_regexp  # ~/blocked_users.list - --- --- -rw
+                                       # ~/share_sessions
+                                       # ~/share_sessions/John_001.log
 - unblock user_name_w_wildcard_w_regexp
 - login user_name
 - logout
@@ -110,25 +171,40 @@ Friend commands:
 - where?   // ~~ pwd //
 ```
 
-1.2 Featured commands for general tasks
-```
-- calc statement   // Enter a calculation session if statement := ''.
+
+IV-2. Common commands
+
+The common commands for both console (1>) and shell (2>) terminals.
+```sh
+- echo log_messages_to_user  # typically used in *.bat in 1> and *.sh in 2$
+                             # echo $enviromnet-variable
+- cd folder_name
+- mkdir folder_name          # with default `1> md` alias
+- rmdir folder_name          # with defualt `1> rd` alias
+- calc statement             # enter a calculation session if statement := ''
+  calc env                   # sub-command to review variabls including ans
 ```
 
-1.3. Routine comands
-```
+
+IV-3. Routine comands
+```sh
 - which command_name
 - pwd
 - ls folder_name
-- cd folder_name
 - touch file_name
 ```
-To be continued..
 
 
-### Session description
+V. Session description
 
-1. Share session
+V-1. Share session
+
+V-1.1. Gramma
+```bnf
+regards = /^bye~?$' | /^Good bye[\.!]$/ | sysop-defined  # it trigger the session closing
+```
+
+V-1.2. Usage
 ```session
 Enter in a share session.
 John> Hi Marry~
@@ -139,18 +215,21 @@ Marry> bye
 session logout.
 ```
 
-2. Calculation session
 
-2.1. Gramma
-```session
+V-2. Calculator (calc) session
+
+V-2.1. Gramma
+```bnf
 statement := assign | expr
 assign := expr
 expr := the-js-features-for-number-without-Math-namespace
 ```
 
-2.2 Feature add-on
+V-2.2 Feature add-on
 
-2.2.1 A function for the resolution of floating point and decimal number
+i) `near(a,b, epsilon) => true|false`
+
+A function for the resolution of floating point and decimal number
 ```es
 const defaultEpsilon = 0.000001
 export const near = (a, b, epsilon) => Math.abs(a - b) <= epsilon
@@ -161,7 +240,7 @@ near(a, b) === false
 near(a, b, 0.0001) === true
 ```
 
-2.3 Usage
+V-2.3 Usage
 Note that the usage in the command line is as below. The usage in the
 session is about the same.
 
