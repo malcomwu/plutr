@@ -137,7 +137,8 @@ following draft table:
                                v-----. ....>/
 
   ==================================================================
-```The dot (.) denotes the signal while the (^) and (v) the sluts.
+   The dot (.) denotes the signal while the (^) and (v) the sluts.
+```
 
 
 ## IV. Command list (Working draft)
