@@ -1,6 +1,6 @@
-                                 Prelude
+#                                 Prelude
 
-                              Table of Conent
+##                            Table of Conent
 
   I. Why plutr
 
@@ -29,7 +29,7 @@
                                          i
 
 
-I. Why plutr
+## I. Why plutr
 
 First, we would like to find out the difference between console and shell.
 A DOS console does with batches, but does within, or out, called a command?
@@ -48,7 +48,7 @@ always in the text-mode. The flow in-between goes, such as a pipe or redirect.
 To compare with a morden shell; however, it remains the same for most application.
 
 
-II. Methodology
+## II. Methodology
 
 Checkup test for the distinction of a console or a shell
 ```
@@ -60,16 +60,17 @@ dos console> instruction? filename /parameter
 dos console> order? filename /parameter
 ```
 
-III. Data flow
+## III. Data flow
 
-III-1. Pipe
+### III-1. Pipe
 
-A pipe is a one way distribution.
+A pipe is a one way distribution (FIFO).
 ```sh
 1> a | b
 2$ a | b
 ```
-III-2. Redirect
+
+### III-2. Redirect
 
 A redirection is a one way dispatch.
 The features are only partially supported in 1> console.
@@ -80,31 +81,55 @@ The features are only partially supported in 1> console.
 2$ a <-> d                (diff a b; a feature for vedors to follow)
 ```
 
-III-3. Other features for v1.0^
+### III-3. Socket
+Some socket operators are sketched as follows:
 
-The defination as below is unclear; for a memo purpose.
 ```sh
 3? a <= b
 3? a => b
 3? a <=> b
 ```
+in which the function is mainly for the 3?-layer for either network
+server-app or in-OS communication. For example, the former the
+socket transmission via the http(s) application layer; aonther, the
+remote desktop applications. For the later, the xterm-xwin model.
+Currently, all the windows in Linux distributions have very low
+efficiency in the sysop or developers do not care, because it's enough
+for you. It is not described for the details. Say, 'no' games can
+be developed in Linux. Can multiple sockets do for the illustation
+as follows:
+
+                                <======>
+                            //===========\\
+               (((kernel)graphica.so)<=>application.o)
+                             \\==========//
+                                ========>
+                                  <====
+
+in which it is applicable to the remote desktop with a certain level
+of security. The interace is clean.
+
+The `2$ b => a <1` and `2$ a <=> b <1`are not supported in v1.0.
+The `1> a => b $2 are supported, but the difinition is unclear at the
+point for your reading.`
 
 
-IV. Command list (Working draft)
+## IV. Command list (Working draft)
 
-IV-1. Console commands
+### IV-1. Console commands
 
 ```sh
 dir directory_name
 ```
 
-IV-2. Shell commands
 
-1 Personal
+### IV-2. Shell commands
 
-1.1. Regular
+**1 Personal**
 
-1.1.1. Privilage commands
+**1.1. Regular**
+
+**1.1.1. Privilage commands**
 
 The following commands are only for SysOp only,
 
@@ -123,7 +148,7 @@ The others for the group leaders who are granted,
 -                                                       (Group leader)
 ```
 
-1.1.2. Descirption of commands between privilage and normal users
+**1.1.2. Descirption of commands between privilage and normal users**
 
 The only default group is with your supervisor or may be two, in which
 the mangers are optional; only your major manger in the up-stream should be
@@ -140,7 +165,7 @@ of `# marklee`. To delete it is anoter option, but it can be added in again.
 The comment is your helper or you want to remove it.
 
 
-1.1.3. Regular commands for the users and their friends
+**1.1.3. Regular commands for the users and their friends**
 
 **Group**
 ```sh
@@ -172,7 +197,7 @@ The comment is your helper or you want to remove it.
 ```
 
 
-IV-2. Common commands
+### IV-3. Common commands
 
 The common commands for both console (1>) and shell (2>) terminals.
 ```sh
@@ -186,7 +211,7 @@ The common commands for both console (1>) and shell (2>) terminals.
 ```
 
 
-IV-3. Routine comands
+**IV-4. Routine comands**
 ```sh
 - which command_name
 - pwd
@@ -195,16 +220,16 @@ IV-3. Routine comands
 ```
 
 
-V. Session description
+## V. Session descriptions
 
-V-1. Share session
+### V-1. Share session
 
-V-1.1. Gramma
+#### V-1.1. Gramma
 ```bnf
 regards = /^bye~?$' | /^Good bye[\.!]$/ | sysop-defined  # it trigger the session closing
 ```
 
-V-1.2. Usage
+#### V-1.2. Usage
 ```session
 Enter in a share session.
 John> Hi Marry~
@@ -216,18 +241,18 @@ session logout.
 ```
 
 
-V-2. Calculator (calc) session
+### V-2. Calculator (calc) session
 
-V-2.1. Gramma
+#### V-2.1. Gramma
 ```bnf
 statement := assign | expr
 assign := expr
 expr := the-js-features-for-number-without-Math-namespace
 ```
 
-V-2.2 Feature add-on
+#### V-2.2 Feature add-on
 
-i) `near(a,b, epsilon) => true|false`
+**i)** `near(a,b, epsilon) => true|false`
 
 A function for the resolution of floating point and decimal number
 ```es
@@ -240,7 +265,7 @@ near(a, b) === false
 near(a, b, 0.0001) === true
 ```
 
-V-2.3 Usage
+#### V-2.3 Usage
 Note that the usage in the command line is as below. The usage in the
 session is about the same.
 

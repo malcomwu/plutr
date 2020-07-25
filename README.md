@@ -2,8 +2,8 @@
 
 The **plutr** is a language targeting to an OS shell, or other possibilities.
 
-## Preface
-https://github.com/malcomwu/plutr/blob/master/preface.md
+## Prelude
+https://github.com/malcomwu/plutr/blob/master/PRELUDE.md
 
 ## Slogen
 - **p**owerful
@@ -22,8 +22,3 @@ https://github.com/malcomwu/plutr/blob/master/preface.md
 ## Features
 - universal (cross platform)
 - plugable
-
-## Plan for milestones
-1. One year, to release v1.0rc version.
-2. After the v1.0 publication, start the v2.0-delta together with the
-   maintainence of v1.0 version.
