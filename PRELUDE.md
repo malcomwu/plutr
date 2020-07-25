@@ -28,8 +28,7 @@
       V-2.1. Gramma
       V-2.2. Feature add-on
       V-2.3. Usage
-```                                         i
-
+```
 
 ## I. Why plutr
 
