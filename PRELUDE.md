@@ -10,6 +10,9 @@
     III-1. Pipe
     III-2. Redirect
     III-3. Socket
+      III-3.1. Definition of socket operators
+      III-3.2. Usage
+      III-3.3. What the =>, <= and <=> is
 
   IV. Command list (Working draft)
     IV-1. Console commands
@@ -117,7 +120,7 @@ The `2$ b => a <1` and `2$ a <=> b <1`are not supported in v1.0.
 The `1> a => b $2 are supported, but the difinition is unclear at the
 point for your reading.`
 
-#### III-3.3. What =>, <= and <=>
+#### III-3.3. What the =>, <= and <=> is
 The the function of the three operators are briefly described in the
 following draft table:
 
