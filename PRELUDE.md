@@ -9,7 +9,7 @@
   III. Data flow
     III-1. Pipe
     III-2. Redirect
-    III-3. Other features for v1.0^
+    III-3. Socket
 
   IV. Command list (Working draft)
     IV-1. Console commands
@@ -82,6 +82,8 @@ The features are only partially supported in 1> console.
 ```
 
 ### III-3. Socket
+
+#### III-3.1. Definition of socket operators
 Some socket operators are sketched as follows:
 
 ```sh
@@ -96,8 +98,10 @@ remote desktop applications. For the later, the xterm-xwin model.
 Currently, all the windows in Linux distributions have very low
 efficiency in the sysop or developers do not care, because it's enough
 for you. It is not described for the details. Say, 'no' games can
-be developed in Linux. Can multiple sockets do for the illustation
-as follows:
+be developed in Linux.
+
+#### III-3.2. Usage
+Can multiple sockets do in the illustation below?
 
                                 <======>
                             //===========\\
@@ -112,6 +116,27 @@ of security. The interace is clean.
 The `2$ b => a <1` and `2$ a <=> b <1`are not supported in v1.0.
 The `1> a => b $2 are supported, but the difinition is unclear at the
 point for your reading.`
+
+#### III-3.3. What =>, <= and <=>
+The the function of the three operators are briefly described in the
+following draft table:
+
+```
+              Table 1. Functions of socket operators (Draft)
+  ==================================================================
+         Operator                 Fuction
+  ------------------------------------------------------------------
+
+      i)    =>               ==.-----^ ...>-(o)==>
+                               v-----. ....>/
+
+     ii)    <=               as above in the other direction
+
+    iii)    <=>              <==.-----^ ...>-(o)==>
+                               v-----. ....>/
+
+  ==================================================================
+```The dot (.) denotes the signal while the (^) and (v) the sluts.
 
 
 ## IV. Command list (Working draft)
