@@ -2,8 +2,6 @@
 
 The **plutr** is a language targeting to an OS shell, or other possibilities.
 
-## Prelude
-https://github.com/malcomwu/plutr/blob/master/PRELUDE.md
 
 ## Slogen
 - **p**owerful
