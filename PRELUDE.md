@@ -228,22 +228,25 @@ The comment is your helper or you want to remove it.
 
 The common commands for both console (1>) and shell (2>) terminals.
 ```sh
-- echo log_messages_to_user  # typically used in *.bat in 1> and *.sh in 2$
-                             # echo $enviromnet-variable
-- cd folder_name
-- mkdir folder_name          # with default `1> md` alias
-- rmdir folder_name          # with defualt `1> rd` alias
-- calc statement             # enter a calculation session if statement := ''
-  calc env                   # sub-command to review variabls including ans
+- echo log_messages_to_user   # typically used in *.bat in 1> and *.sh in 2$
+                              # echo $enviromnet-variable
+- mkdir folder_name           # with default `1> md` alias
+- rmdir folder_name           # with defualt `1> rd` alias
+- calc statement              # enter a calculation session if statement := ''
+  calc env                    # sub-command to review variabls including ans
 ```
 
 
 **IV-4. Routine comands**
 ```sh
 - which command_name
-- pwd
-- ls folder_name
-- touch file_name
+- pwd                         # 2$ present working directory
+  cd                          # 1> same as about; it does cd '' signature
+- cd folder_name              # change direcory
+- ls folder_name              # list directory
+- touch file_name             # results in <fs type-"abcfs">
+                              #              <file_name>new String('') EOF</file_name>
+                              #            </fs>
 ```
 
 
