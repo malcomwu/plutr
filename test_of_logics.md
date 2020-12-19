@@ -56,19 +56,23 @@ it can be seen of the production of zero.
 
 ## Case study of squred dollar
 
+**Quality stars**
 ```
-Linear: 1. very bad; 2. bad; 3. normal; 4. good; 5. very good    (Quality stars)
+Linear: 1. very bad; 2. bad; 3. normal; 4. good; 5. very good
 ```
 
 Ref 1 Google stars; level
 
+**Atmospheric stars**
 ```
-Exponential: 1. nice 2. 3. (cosy) 4. outstanding 5. extradinary  (atmospheric stars)
+Exponential: 1. nice 2. 3. (cosy) 4. outstanding 5. extradinary
 ```
 
 Ref 2 Michelin stars; (atmospheric) rank
 
-Reference functions and constant:
+**References**
+
+Functions and constants:
 
 - `log_10`, `log_2`, `log_n`, `ln`;
 
