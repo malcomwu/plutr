@@ -1,4 +1,4 @@
-# plutr
+# plutr (v0.2.0-gamma)
 The **plutr** is a language targeting to an OS shell, or other possibilities.
 
 
