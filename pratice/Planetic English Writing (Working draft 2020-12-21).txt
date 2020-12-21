@@ -1,0 +1,155 @@
+            # Planetic English Writing (Working draft 2020-12-21)
+
+```template
+                               Title (Draft)
+
+                         Affiliation (Thanks to there)
+
+                                  Abstract
+
+        Lorem ipsum (platonium-$) lorem ipsum ... ... ... . ... ... ... .
+        ... ... ... ... . ... ... ... . ... ... ... . ... . ... ... ... .
+        ... ... ... ... . ... ... ... . ... ... ... . ... ... ... .
+```
+
+
+## Introduction
+(It is draft. To be filled...)
+
+
+## Untitled or named or titled (one or more)
+(It is draft. To be filled...)
+
+
+## Template for the test
+
+It is a context here in this doc. The play [>] or start [>] is in the following
+macro templete. Make it work in several iteration of scripting and/or programming.
+The macro is a test in rehersal for preparation. It shall loopback to your current
+loop as of, but we wish make it more well-defined by the practice.
+
+(The context here is denoted this and it is possible going to that. The author wants
+to secure this.)
+
+```test
+<< title . sop >>
+
+[>]  || start this (the context)
+  this  || initialize it in batch, init(), or with parameter, initWith(a, b, ...)
+  ...  || programming in concise
+
+  [||]
+    ... ... ...  || scripting in vervose
+  [>]
+  this/that  || switch(es)
+  ...
+  that  || this is overwhelmed by that
+  ...
+  ...
+
+  [||]
+    ... ... ...
+  [>]
+  ...
+
+  this  || @_@.. || neither this nor that
+  return $  || default value of $ is in [[]]; -1 for error for testing purposes.
+
+[[$ = -1]]  || prepare for launch
+```
+
+This come back in the context, this, again. The $ in [[$]] is the value of $ and
+The default value is described in [[$ = -1]]. The -1 means error here this is
+because we all want to break it now but our momentum and momenta still here.
+
+Please fill the untitled and add anything else in context and then go into the
+templet of macro [>] .. [||] .. [[$ = -1]]. Do it back-and-forth as ususal as you
+used to. The common sense for this is only a single one, and others are backup. We
+want money, um~, but not quite so. We want to make money.
+
+
+## Untitled or named or titled (one or more)
+(It is draft. To be filled...)
+
+
+## Note
+
+The idea is crucial and very important for us to pratice and without exercise. It
+only makes you feeling fresh or refreshing yourself. In funcional thinking:
+
+                   1 + 2 * 3 = 1 + (2 * 3) = 7.                             [1]
+
+In macro thinkg we focus on here is by the definition: 
+
+                    Define ADD(a, b)     a + b                              [2]
+
+By substuting of variables, ADD(1, 2) * 3 = 1 + 2 * 3 = 7; however, it should be
+3 * 3 = 9. A good pratice is do (ADD(1, 2)) * 3 = 9 in paranthesis so that the sub-
+stution becomes (1 + 2) * 3 = 9 and it works everywhere without the flaw above.
+This is because you are not sure that, wether the macro writer care of this. There-
+fore, because we are in the same front, the wave front, and please follow the best
+pratice in,
+
+** Psuedo-code**
+
+```psuedo
+                          ADD(a, b) :=: (a + b)
+```
+
+**Macro**
+
+```test
+<<< SCRIPT_A >>>  || print console
+
+SCRIPT_A(b, c)
+  [$b||]  || b can be affacted in this script
+  ...
+  [$c>]  || result c; loop c back in the program
+```
+
+**Program**
+
+```test
+<< Planetic English Writing >>  || print screen
+
+[>]
+  ...
+  $d <= SCRIPT_A(b, c)  || map c back-in and stored in d for testing purposes
+  ...
+[[$ = -1]]
+```
+The dataflow of $ or the program maintains the same, but the script(s) have data-
+flow(s) of $'s.
+
+
+## Case study
+
+1. Natural, not natural and unnatual in nature [1] (Reference [1] is of the
+   template here).
+
+2. Natural, anit-natural and violence/violalation of the natural [1]. (Analogy:
+   Superstitious vs. rediculous)
+
+
+## Appendix A
+
+    The appendice is a pratice to be tested, for doctors (abstraction title) to cure
+the patients. First, introduce your guidance to your patient; second, provide the
+guideline or better your guideline to him or here.
+
+It shall go on an you may want to giving him or her the doctor's prescription with
+your signature or stamp. The abstraction patient will go to the abstraction drug
+store for their signature or stamp, and abstraction medicine from the store. The
+appendix is based on the common pratice in human health.
+
+### A-1
+
+For Prof. $, in this tempo, convert the British sytle in a, b and c, back to the
+American style in a, b, and c. The others choose: (1) both former and latter;
+(2) either former or latter; (3) vary it. It implies the fixed or flexible style).
+
+
+## References
+
+1. "Everyone just say I'm natural." -- Laodzu, *Daoter Jing*
+
