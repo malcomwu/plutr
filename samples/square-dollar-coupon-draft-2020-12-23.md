@@ -1,29 +1,20 @@
-                       Square-dollar coupon (draft-2020-12-23)
+# Square-dollar coupon (draft-2020-12-23)
 
-(This  is  a standalone document  for  introduction of the methodology  of  the
- square-dollar coupon.)
+*(This  is  a standalone document  for  introduction of the methodology  of  the
+ square-dollar coupon.)*
 
-The square-dollar coupon ($^20) is derrived from square yuan (¤¸^200) early this
-year. This draft is a new intepretation based on it. The following macro-template
-demostrates the usage in testing purposes. The test can only be used to deal it with
-in trusted third-parties. It is mainly applicable in two parties. The result of the
-tests will be treasurable to perspect the value of this coupon.
+The square-dollar coupon in unit of `($^2)` is derrived from square yuan `(åœ“^2)100`
+early this year. This draft is a new intepretation based on it. The following
+macro-template demostrates the usage for testing purposes. The test can only be used
+to deal it with in trusted third-parties. It is mainly applicable in two parties.
+The result of the tests will be treasurable to perspect the value of this coupon.
 
-(Context is end here and the below is the macro-template.)
-
+The **macro-template** is as follows
 
 ```sop
                               << deal-with.sop >>
-
-[Define Optimize ::= value and new-value with a factor]
-  ||| The normalization algorithm
-  ||| y => 1/x; x y => 1; v(1 1) => 1 (normalized).
-  ||| y => ($^2)400 / x; x y => ($^2)400; v(x y) => $20 (concept unit)
-
-  value := v((value + 1) / new-value)
-  || value => $  || explicit lambda (obmited here)
-[[$]]
-
+[Define]
+  near epsilon := 0.1
 
 [> $ = 20]
   $ => let dollar value
@@ -41,6 +32,7 @@ tests will be treasurable to perspect the value of this coupon.
     || Introduction of a default optimizer:
     || value <= Optimize value and (new-value with a factor).
     value <= Optimize value and new-value with a factor.
+    value <= new-value if value near new-value, else value.
     || ...
   [>]
   || ...
@@ -72,6 +64,35 @@ tests will be treasurable to perspect the value of this coupon.
   8. The dollar sign ($) is the lambda value with optional defaults in start [>]
      and [stop]. The leading $ and ($^2) denote the unit.
   9. Terms: [>] play and stop [[]] macro; || inline pause; [||] multiline pause [>]
-            ||| manual pause.
-  10. Predifined macros: [Define] and [Note].
+     ||| manual pause; [Note] an ordered list for notes.
+  10. Frontmatters: [Title: title-1], [Subtitle: subtitle-1],
+     [Authors: a1\thanks-to-p1, a2 and a3], [Affiliation af-1, af-2 and af3],
+     [Macro] and [Function]. (p1 definition to be added)
+  11. Backmatters: [References]
+  11. Comparison operators: <, =, >, <o=, =o>, ~=, which means lt, eq, gt, le, ge, ne. 
+  12. All operators is in keyword boundary and any operator can be within identifier
+      execpt |.
+```
+
+## Appendix
+
+**System library** in *progress*
+
+```sop
+            <<< Collection of system library >>>
+
+|| The following two definitions are in-language library
+
+[Macro Optimize ::= value and new-value with a factor]
+  ||| The normalization algorithm
+  ||| y => 1/x; x y => 1; v(1 1) => 1 (normalized).
+  ||| y => ($^2)400 / x; x y => ($^2)400; v(x y) => $20 (concept unit)
+
+  || value => $  || explanation: explicit lambda (obmited here)
+  value := v((value + 1) / new-value)
+[[$]]
+
+[Macro operator near ::= expression a ~= b in epsilon := 0.01]
+  value := |a - b| <o= epsilon
+[[$]]
 ```
