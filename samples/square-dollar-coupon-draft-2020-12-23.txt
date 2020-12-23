@@ -1,0 +1,77 @@
+                       Square-dollar coupon (draft-2020-12-23)
+
+(This  is  a standalone document  for  introduction of the methodology  of  the
+ square-dollar coupon.)
+
+The square-dollar coupon ($^20) is derrived from square yuan (¤¸^200) early this
+year. This draft is a new intepretation based on it. The following macro-template
+demostrates the usage in testing purposes. The test can only be used to deal it with
+in trusted third-parties. It is mainly applicable in two parties. The result of the
+tests will be treasurable to perspect the value of this coupon.
+
+(Context is end here and the below is the macro-template.)
+
+
+```sop
+                              << deal-with.sop >>
+
+[Define Optimize ::= value and new-value with a factor]
+  ||| The normalization algorithm
+  ||| y => 1/x; x y => 1; v(1 1) => 1 (normalized).
+  ||| y => ($^2)400 / x; x y => ($^2)400; v(x y) => $20 (concept unit)
+
+  value := v((value + 1) / new-value)
+  || value => $  || explicit lambda (obmited here)
+[[$]]
+
+
+[> $ = 20]
+  $ => let dollar value
+  let square_dollar coupon_value = value^2  || ($^2)100
+
+  || Enumerate the cutoffs for the schema validator.
+  let cutoff dis := $10  || discrimination (dis) limit of value (variable)
+  let cutoff thr := $30  || threshole (thr) limit of value (variable)
+  || ...
+
+  || ...
+
+  [||]
+    || Note that the cutoff is not the boundary but a hint.
+    || Introduction of a default optimizer:
+    || value <= Optimize value and (new-value with a factor).
+    value <= Optimize value and new-value with a factor.
+    || ...
+  [>]
+  || ...
+
+  || ...
+
+  || An in-language validator with the predefined schema is provided as below. The
+  || user can reset the secondary validator as above. If the principle validator is
+  || broken, it is welcome. The limit is to avoid the violation of current legisla-
+  || tion. It can certainly be discussed later within plateform(s).
+
+  value => $  || principle validator: $0 <= value <= $40      [1]
+              || secondary validator: dis            thr      [2]
+              || Equation [1] is strict and equation [2] is a metric which can be
+              || violated. The limit of the violation is the legal range.
+[[$]]
+
+<<< The new value is $. >>>
+
+
+[Note]
+  1. The dollar and square_dollar are predefined unit types.
+  2. The cutoff is a predefined enumeration type.
+  3. Keywords: let, const, define, and, and with.
+  4. Experssion operators: ^ (powop), v (square root short-cut), and = (open here).
+  5. Assignment operator: := (assign the right-value to the left-value.
+  6. Mapping operators: => (chuck to), and <= (chuck from).
+  7. Quoatation marks: << words >> -- print screen and <<< words >>> print string.
+  8. The dollar sign ($) is the lambda value with optional defaults in start [>]
+     and [stop]. The leading $ and ($^2) denote the unit.
+  9. Terms: [>] play and stop [[]] macro; || inline pause; [||] multiline pause [>]
+            ||| manual pause.
+  10. Predifined macros: [Define] and [Note].
+```
