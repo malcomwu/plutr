@@ -69,8 +69,8 @@ The **macro-template** is as follows
      [Authors: a1\thanks-to-p1, a2 and a3], [Affiliation af-1, af-2 and af3],
      [Macro] and [Function]. (p1 definition to be added)
   11. Backmatters: [References]
-  11. Comparison operators: <, =, >, <o=, =o>, ~=, which means lt, eq, gt, le, ge, ne. 
-  12. All operators is in keyword boundary and any operator can be within identifier
+  12. Comparison operators: <, =, >, <o=, =o>, ~=, which means lt, eq, gt, le, ge, ne. 
+  13. All operators is in keyword boundary and any operator can be within identifier
       execpt |.
 ```
 
